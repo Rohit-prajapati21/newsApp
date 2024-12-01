@@ -1,0 +1,13 @@
+/* logo imagae */
+.img{
+  height: 55px;
+  width: 70px;
+}
+
+.navbar{
+  margin-left: 35px;
+}
+.title{
+  position: relative;
+  right: 350px;
+}

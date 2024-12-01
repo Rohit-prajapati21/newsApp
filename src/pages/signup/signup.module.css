@@ -1,0 +1,45 @@
+
+
+.signupForm{
+  background-color: black;
+  width: 448px;
+  height: 430px;
+  margin:  10px 380px;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 1px 1px 21px 0 white;
+}
+
+
+.form_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 23px;
+  height:300px;
+}
+.form_box label{
+  color: white;
+}
+input{
+  color: black;
+ outline-style: none;
+ padding: 5px;
+ width: 100%;
+}
+
+
+/* label{
+  display: block;
+} */
+
+.btn button{
+width: 368px;
+}
+
+
+.signup_bar{
+  margin-left: 138px;
+  color: white;
+}
+

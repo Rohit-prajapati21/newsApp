@@ -1,0 +1,16 @@
+.list{
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list a{
+  text-decoration: none;
+  color: black;
+}
+.list i:hover{
+  cursor: pointer;
+  color: red;
+}

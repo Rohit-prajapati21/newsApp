@@ -1,0 +1,36 @@
+
+
+
+
+.loginForm {
+  margin: auto;
+   width: 410px;
+   height: 340px;
+   margin:  10px 380px;
+   border-radius: 10px;
+   padding: 40px; 
+   box-shadow: 1px 1px 21px 0 white;
+ background-color: black;
+   
+ }
+ 
+ 
+ .Container_input{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ height: 220px;
+ margin-top: 13px;
+ background-color: black;
+ }
+ .Container_input label{
+color: white;
+ }
+ .btn button{
+   width: 330px;
+ }
+ 
+ .log_bar{
+   margin-left: 138px;
+   color: white;
+ }
