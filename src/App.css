@@ -1,7 +1,31 @@
-.app{
+/* General Styles */
+.app {
   width: 100%;
-  /* background-color: #f1f3f6; */
-   
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .app {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
 
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .app {
+    padding: 20px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1025px) {
+  .app {
+    padding: 30px;
+    font-size: 18px;
+  }
+}

@@ -1,16 +1,64 @@
-.list{
+.list {
   margin: 5px;
   padding: 5px 15px;
   background-color: yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center; /* Ensure items are vertically aligned */
+  border-radius: 5px; /* Optional: add rounded corners */
 }
-.list a{
+
+.list a {
   text-decoration: none;
   color: black;
+  font-size: 14px; /* Default font size */
+  flex-grow: 1; /* Allow the link to take up available space */
 }
-.list i:hover{
+
+.list i {
+  font-size: 18px; /* Default icon size */
   cursor: pointer;
+}
+
+/* Hover effect for the icon */
+.list i:hover {
   color: red;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .list {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px;
+  }
+
+  .list a {
+    font-size: 16px; /* Larger font size for better readability on small screens */
+  }
+
+  .list i {
+    font-size: 22px; /* Make the icon larger for mobile */
+    margin-top: 5px; /* Add spacing between text and icon */
+  }
+}
+
+/* Tablet Devices (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .list {
+    flex-direction: row; /* Keep items in row on tablet */
+    justify-content: space-between; /* Space out items */
+    padding: 8px;
+  }
+
+  .list a {
+    font-size: 15px; /* Slightly smaller font size */
+  }
+
+  .list i {
+    font-size: 20px; /* Slightly smaller icon */
+  }
 }

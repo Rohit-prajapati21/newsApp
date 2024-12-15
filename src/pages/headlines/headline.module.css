@@ -1,3 +1,22 @@
-.Headlines_container{
+.Headlines_container {
   padding: 5px 20px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Add spacing between the headlines */
+}
+
+@media only screen and (max-width: 768px) {
+  .Headlines_container {
+    padding: 5px 15px; /* Adjust padding for tablet-sized screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .Headlines_container {
+    padding: 5px 10px; /* Adjust padding for small screens (e.g., mobile phones) */
+  }
+
+  .Headlines_container .headline {
+    font-size: 12px; /* Reduce font size for smaller screens */
+  }
 }

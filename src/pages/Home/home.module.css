@@ -1,4 +1,20 @@
-.home_container{
+.home_container {
   background-color: red;
+  padding: 20px; /* Add padding for spacing around the content */
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center the content */
+  flex-direction: column; /* Stack elements vertically */
+}
 
+@media only screen and (max-width: 768px) {
+  .home_container {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home_container {
+    padding: 5px; /* Further reduce padding on very small screens */
+  }
 }

@@ -1,45 +1,95 @@
-
-
-.signupForm{
+/* General Styles */
+.signupForm {
   background-color: black;
   width: 448px;
   height: 430px;
-  margin:  10px 380px;
+  margin: 10px auto; /* Center the form horizontally */
   border-radius: 10px;
   padding: 40px;
   box-shadow: 1px 1px 21px 0 white;
 }
 
-
-.form_box{
+.form_box {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 23px;
-  height:300px;
+  height: 300px;
 }
-.form_box label{
+
+.form_box label {
   color: white;
 }
-input{
+
+input {
   color: black;
- outline-style: none;
- padding: 5px;
- width: 100%;
+  outline-style: none;
+  padding: 5px;
+  width: 100%;
 }
 
-
-/* label{
-  display: block;
-} */
-
-.btn button{
-width: 368px;
+.btn button {
+  width: 100%; /* Make the button full width */
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-
-.signup_bar{
+.signup_bar {
   margin-left: 138px;
   color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) {
+  .signupForm {
+    width: 90%; /* Allow the form to take up 90% of the width on tablets */
+    margin: 10px 20px; /* Reduce margin on smaller screens */
+    height: auto; /* Adjust height based on content */
+    padding: 30px;
+  }
+
+  .btn button {
+    width: 100%; /* Button should take full width on tablets */
+  }
+
+  .form_box {
+    height: auto; /* Let the form box grow based on content */
+  }
+
+  .signup_bar {
+    font-size: 20px; /* Make signup header slightly bigger */
+    margin-left: 0; /* Remove margin for better alignment */
+    text-align: center; /* Center the signup header */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .signupForm {
+    width: 95%; /* Allow the form to take 95% of the width on smaller screens */
+    margin: 10px 10px; /* Even smaller margin */
+    padding: 20px;
+    height: auto;
+  }
+
+  .form_box {
+    height: auto;
+  }
+
+  .signup_bar {
+    font-size: 18px; /* Smaller font for small screens */
+  }
+
+  input {
+    padding: 8px; /* Increase padding for better touch input */
+  }
+
+  .btn button {
+    padding: 12px; /* Increase button padding for easier tapping */
+  }
 }
 

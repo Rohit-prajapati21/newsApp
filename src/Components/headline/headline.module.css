@@ -1,29 +1,87 @@
-.headline{
- background-color: yellow;
- margin-top: 10px;
- padding: 5px 5px;
- cursor: pointer;
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+.headline {
+  background-color: yellow;
+  margin-top: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; /* Optional: add rounded corners */
 }
-.headline:hover{
-  background-color: #f1f3f6;
 
+.headline:hover {
+  background-color: #f1f3f6;
 }
-.headline a{
+
+.headline a {
   text-decoration: none;
   color: black;
   font-size: 14px;
- 
+  flex-grow: 1; /* Makes the link take up the available space */
 }
-.headline a:hover{
+
+.headline a:hover {
   color: blue;
 }
 
-h3{
-  text-align: center;
+.headline i {
+  font-size: 18px;
+  cursor: pointer;
 }
-.headline i:hover{
+
+/* Heading styling */
+h3 {
+  text-align: center;
+  font-size: 1.5rem; /* Default heading size */
+}
+
+/* Hover effect for the icon */
+.headline i:hover {
   color: blue;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .headline {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px;
+  }
+
+  .headline a {
+    font-size: 16px; /* Increase font size for better readability on small screens */
+  }
+
+  .headline i {
+    font-size: 24px; /* Make the icon bigger for mobile */
+    margin-top: 5px; /* Space the icon from the text */
+  }
+
+  h3 {
+    font-size: 1.2rem; /* Reduce heading size on mobile */
+  }
+}
+
+/* Tablet Devices (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .headline {
+    flex-direction: row; /* Keep items in row on tablet */
+    justify-content: space-between; /* Space out items */
+    padding: 8px;
+  }
+
+  .headline a {
+    font-size: 15px; /* Adjust font size slightly smaller */
+  }
+
+  .headline i {
+    font-size: 22px; /* Slightly smaller icon */
+  }
+
+  h3 {
+    font-size: 1.3rem; /* Slightly smaller heading */
+  }
 }
